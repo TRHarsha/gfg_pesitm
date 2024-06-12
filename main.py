@@ -190,6 +190,7 @@ if page == "Page 1":
         if user_code.strip() == corrected_code.strip():
             st.balloons()
             st.success("Congratulations! Your code is correct!")
+            st.image(image_path1, caption="This is an image", use_column_width=True)
             st.session_state.page_unlocked = True
         else:
             st.error("Sorry, your code is not correct. Try again!")
