@@ -1,5 +1,8 @@
 import streamlit as st
 
+image_path1="clue1.jpg"
+image_path2="clue2.jpg"
+image_path3="clue3.jpg"
 # Wrong code
 wrong_code = """
 #include <stdio.h>
