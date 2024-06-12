@@ -190,7 +190,7 @@ if page == "Page 1":
         if user_code.strip() == corrected_code.strip():
             st.balloons()
             st.success("Congratulations! Your code is correct!")
-            st.image(image_path1, caption="This is an image", use_column_width=True)
+            st.image(image_path1, caption="Image hint 1", use_column_width=True)
             st.session_state.page_unlocked = True
         else:
             st.error("Sorry, your code is not correct. Try again!")
@@ -204,6 +204,7 @@ elif page == "Page 2":
             if user_code2.strip() == corrected_code2.strip():
                 st.balloons()
                 st.success("Congratulations! Your code is correct!")
+                st.image(image_path2, caption="Image hint 2", use_column_width=True)
                 st.session_state.page2_unlocked = True
             else:
                 st.error("Sorry, your code is not correct. Try again!")
@@ -219,6 +220,7 @@ elif page == "Page 3":
             if user_code3.strip() == corrected_code3.strip():
                 st.balloons()
                 st.success("Congratulations! Your code is correct!")
+                st.image(image_path3, caption="Image hint 3", use_column_width=True)
             else:
                 st.error("Sorry, your code is not correct. Try again!")
     else:
