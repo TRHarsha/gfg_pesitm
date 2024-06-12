@@ -51,13 +51,13 @@ int main()
     printf("\\nEnter 25 elements of array:\\n");
     for (i = 0; i < 25; i++)
     {
-        scanf("%d", arr[i]); // Error: Missing '&' before 'arr[i]'
+        scanf("%d", arr[i]);
     }
-    n = arr;                  // Error: Should be *arr
-    for (i = 1; i <= 25; i++) // Error: Should be 'i < 25'
+    n = arr;
+    for (i = 1; i <= 25; i++)
     {
         if (*(arr + i) < n)
-            n = arr[i]; // Error: Should be *(arr + i)
+            n = arr[i];
     }
     printf("\\nSmallest number in the array is: %d\\n", n);
     return 0;
